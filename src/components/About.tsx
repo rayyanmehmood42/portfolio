@@ -32,22 +32,33 @@ export function About() {
         >
           <div>
             <div className="text-sm font-medium uppercase tracking-[0.2em] text-[var(--neon-cyan)]">
-              About
+              About me
             </div>
             <h2 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-5xl">
-              Engineering the future of <span className="text-gradient-primary">software</span>, one product at a time.
+              I build <span className="text-gradient-primary">AI-native</span> products founders are proud to ship.
             </h2>
             <p className="mt-6 text-lg text-muted-foreground">
-              For the past 8 years I've partnered with YC-backed startups and Fortune 500
-              teams to ship category-defining products. I obsess over the intersection
-              of <span className="text-foreground">AI</span>,{" "}
-              <span className="text-foreground">design systems</span>, and{" "}
-              <span className="text-foreground">developer experience</span>.
+              I'm <span className="text-foreground">Rayyan Mehmood</span> — a software engineer
+              and UI/UX specialist focused on building <span className="text-foreground">AI SaaS</span> and
+              scalable digital products. I work with founders, agencies and growing
+              teams who care deeply about how their software looks, feels, and performs.
             </p>
             <p className="mt-4 text-muted-foreground">
-              Whether you need an MVP in 4 weeks or a complete platform rebuild, I bring
-              the same rigor — clean architecture, beautiful interfaces, and the kind of
-              polish that makes investors say yes.
+              My expertise spans <span className="text-foreground">custom web applications</span>,
+              <span className="text-foreground"> AI integrations</span>, automation systems and
+              high-converting interfaces. From the first wireframe to the last deployment,
+              I take ownership of the entire product — architecture, design, and delivery.
+            </p>
+            <p className="mt-4 text-muted-foreground">
+              My mission is simple: help businesses grow faster through technology that
+              actually works. Every line of code and every pixel I ship is built around
+              real outcomes — more users, better retention, stronger brand.
+            </p>
+            <p className="mt-4 text-muted-foreground">
+              I obsess over <span className="text-foreground">innovation</span>,
+              <span className="text-foreground"> performance</span> and
+              <span className="text-foreground"> clean design</span> — because in 2026,
+              "good enough" software is invisible. Premium products win.
             </p>
           </div>
 

@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Linkedin, Sparkles } from "lucide-react";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/rayyanmehmood42/";
 
 export function Hero() {
   return (
@@ -27,12 +29,12 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="font-display text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          Crafting{" "}
-          <span className="text-gradient-primary">AI-native</span>
+          I'm{" "}
+          <span className="text-gradient-primary">Rayyan Mehmood</span>
           <br />
-          products that{" "}
+          building AI products that{" "}
           <span className="relative inline-block">
-            <span className="text-gradient">convert.</span>
+            <span className="text-gradient">scale.</span>
             <span className="absolute -bottom-2 left-0 h-1 w-full rounded-full bg-gradient-primary opacity-70 blur-sm" />
           </span>
         </motion.h1>
@@ -43,9 +45,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.25 }}
           className="mt-8 max-w-2xl text-lg text-muted-foreground sm:text-xl"
         >
-          I'm <span className="text-foreground">Nova Reyes</span> — a senior full-stack engineer
-          designing premium AI SaaS, custom web apps and conversion-driven UI/UX
-          for ambitious founders.
+          AI SaaS Developer · Software Engineer · UI/UX Specialist —
+          partnering with founders to design and ship premium digital products
+          that look stunning and convert relentlessly.
         </motion.p>
 
         <motion.div
@@ -55,17 +57,26 @@ export function Hero() {
           className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
         >
           <a
-            href="#contact"
+            href="#work"
             className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-medium text-white shadow-glow transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_50px_oklch(0.65_0.27_295/0.7)]"
           >
-            Start a project
+            View work
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
           <a
-            href="#work"
+            href="#contact"
             className="glass inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium text-foreground transition-all duration-300 hover:bg-white/10"
           >
-            View work
+            Contact me
+          </a>
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium text-foreground transition-all duration-300 hover:bg-white/10"
+          >
+            <Linkedin className="h-4 w-4 text-[var(--neon-cyan)]" />
+            LinkedIn
           </a>
         </motion.div>
 

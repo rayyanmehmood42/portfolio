@@ -36,11 +36,11 @@ export function Navbar() {
           <div className="relative h-8 w-8">
             <div className="absolute inset-0 rounded-lg bg-gradient-primary opacity-90 blur-[2px]" />
             <div className="relative flex h-full w-full items-center justify-center rounded-lg bg-gradient-primary text-sm font-bold text-white">
-              N
+              R
             </div>
           </div>
           <span className="font-display text-lg font-semibold tracking-tight">
-            Nova<span className="text-gradient-primary">.dev</span>
+            Rayyan<span className="text-gradient-primary">.dev</span>
           </span>
         </a>
 
