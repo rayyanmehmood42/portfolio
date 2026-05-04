@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Mail, MessageCircle } from "lucide-react";
+import { ArrowRight, Linkedin, Mail } from "lucide-react";
+
+const LINKEDIN_URL = "https://www.linkedin.com/in/rayyanmehmood42/";
 
 export function Contact() {
   return (
@@ -21,28 +23,30 @@ export function Contact() {
               Let's build
             </div>
             <h2 className="mt-4 font-display text-4xl font-semibold leading-tight sm:text-6xl">
-              Got an idea worth <span className="text-gradient-primary">shipping?</span>
+              Ready to ship something <span className="text-gradient-primary">unforgettable?</span>
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
               I take on a handful of premium projects each quarter. Tell me about yours
-              and I'll reply within 24 hours.
+              and I'll reply within 24 hours — no fluff, just a clear plan to win.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
-                href="mailto:hello@nova.dev"
+                href={LINKEDIN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-medium text-white shadow-glow transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_50px_oklch(0.65_0.27_295/0.7)]"
               >
-                <Mail className="h-4 w-4" />
-                hello@nova.dev
+                <Linkedin className="h-4 w-4" />
+                Connect on LinkedIn
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
-                href="#"
+                href="mailto:hello@rayyanmehmood.dev"
                 className="glass inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium text-foreground transition-all duration-300 hover:bg-white/10"
               >
-                <MessageCircle className="h-4 w-4" />
-                Book a call
+                <Mail className="h-4 w-4" />
+                hello@rayyanmehmood.dev
               </a>
             </div>
 
@@ -58,9 +62,9 @@ export function Contact() {
         </motion.div>
 
         <footer className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 text-xs text-muted-foreground sm:flex-row">
-          <div>© 2026 Nova Reyes. Crafted with obsession.</div>
+          <div>© 2026 Rayyan Mehmood. Crafted with obsession.</div>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:text-foreground">LinkedIn</a>
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">LinkedIn</a>
             <a href="#" className="hover:text-foreground">GitHub</a>
             <a href="#" className="hover:text-foreground">X</a>
             <a href="#" className="hover:text-foreground">Fiverr</a>
