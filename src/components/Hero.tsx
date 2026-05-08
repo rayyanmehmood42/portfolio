@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Linkedin, Sparkles } from "lucide-react";
+import rayyanPortrait from "@/assets/rayyan.jpg";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/rayyanmehmood42/";
 
@@ -14,9 +15,25 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center text-center">
         <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="relative mb-8"
+        >
+          <div className="absolute -inset-2 rounded-full bg-gradient-primary opacity-60 blur-xl animate-glow-pulse" />
+          <div className="gradient-border relative h-32 w-32 overflow-hidden rounded-full sm:h-40 sm:w-40">
+            <img
+              src={rayyanPortrait}
+              alt="Rayyan Mehmood — AI SaaS Developer"
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.05 }}
           className="glass mb-8 inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium text-muted-foreground"
         >
           <Sparkles className="h-3.5 w-3.5 text-[var(--neon-cyan)]" />
