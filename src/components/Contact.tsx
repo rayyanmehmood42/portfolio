@@ -42,11 +42,11 @@ export function Contact() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
-                href="mailto:hello@rayyanmehmood.dev"
+                href="mailto:rayyanmehmood42@gmail.com"
                 className="glass inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-medium text-foreground transition-all duration-300 hover:bg-white/10"
               >
                 <Mail className="h-4 w-4" />
-                hello@rayyanmehmood.dev
+                rayyanmehmood42@gmail.com
               </a>
             </div>
 
